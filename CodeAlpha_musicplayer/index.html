@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"/>
+
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+    <div class="main_div">
+        <div class="music_container">
+
+            <h2 id="title">5-7</h2>
+            <h3 id="artist">Karan Aujla</h3>
+
+            <!-- FIX 1: class name corrected -->
+            <div class="img-container">
+                <img src="images/thapa-1.jpg" alt="music"/>
+            </div>
+
+            <!-- FIX 2: added id -->
+            <audio id="audio" src="music/thapa-1.mp3"></audio>
+
+            <!-- FIX 3: removed duplicate div -->
+            <div class="music_controls">
+                <i class="fas fa-backward" id="prev" title="Previous"></i>
+                <i class="fas fa-play main_button" id="play" title="Play"></i>
+                <i class="fas fa-forward" id="next" title="Next"></i>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
